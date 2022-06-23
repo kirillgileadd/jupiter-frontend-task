@@ -19,10 +19,12 @@ export const GalleryList = styled.ul`
   background-color: #FDF0E9;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-items: center;
   gap: 29px;
   padding: 80px 0;
   @media (max-width: 1040px) {
     padding: 50px 0;
+    justify-items: initial;
   }
 `
 
@@ -33,6 +35,7 @@ interface GalleryItemCardProps {
 }
 
 export const GalleryItemCard = styled.li<GalleryItemCardProps>`
+  min-width: 330px;
   cursor: pointer;
   padding: 56px 48px;
   position: relative;

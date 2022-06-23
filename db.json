@@ -25,12 +25,6 @@
       "id": 4
     },
     {
-      "title": "Task12",
-      "img": "https://html5css.ru/bootstrap4/img_avatar3.png",
-      "categoryId": 1,
-      "id": 5
-    },
-    {
       "title": "Task",
       "img": "https://html5css.ru/bootstrap4/img_avatar3.png",
       "categoryId": 3,
@@ -53,12 +47,6 @@
       "img": "https://html5css.ru/bootstrap4/img_avatar3.png",
       "categoryId": 4,
       "id": 9
-    },
-    {
-      "title": "New Task",
-      "img": "https://html5css.ru/bootstrap4/img_avatar3.png",
-      "categoryId": 1,
-      "id": 10
     },
     {
       "title": "New Task",
