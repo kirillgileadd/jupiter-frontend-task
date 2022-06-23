@@ -1,15 +1,35 @@
-import React, {Dispatch, FC, SetStateAction} from 'react';
+import React, {FC} from 'react';
 import styled from "styled-components";
 
 interface SelectProps {
     options: Array<any>;
     defaultValue: string;
     value?: string
-    onChange: (catygory: string) => void
+    onChange: (category: string) => void
 }
 
 const SelectWrapper = styled.div`
   width: 100%;
+  position: relative;
+  
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7.5px 0 7.5px;
+    border-color: #ffac99 transparent transparent transparent;
+    
+    pointer-events: none;
+    @media (max-width: 1040px) {
+      display: block;
+    }
+  }
 `
 const StyledSelect = styled.select`
   display: none;

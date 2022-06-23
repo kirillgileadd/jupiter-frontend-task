@@ -9,6 +9,9 @@ export const GalleryInner = styled.ul`
   flex-direction: column;
   display: flex;
   align-items: center;
+  @media (max-width: 1040px) {
+    padding: 30px 0;
+  }
 
 `
 export const GalleryList = styled.ul`
@@ -18,6 +21,9 @@ export const GalleryList = styled.ul`
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 29px;
   padding: 80px 0;
+  @media (max-width: 1040px) {
+    padding: 50px 0;
+  }
 `
 
 // GalleryItemCard
@@ -37,7 +43,9 @@ export const GalleryItemCard = styled.li<GalleryItemCardProps>`
   outline: ${props => props.active ? "7px solid #16cd53" : 'none'};
   background: #000;
   @media (max-width: 1040px) {
+    cursor: initial;
     outline: none;
+    padding: 56px 28px;
   }
 
   img {
@@ -62,6 +70,7 @@ export const GalleryItemCardContent = styled.div`
   align-items: flex-start;
 `
 export const GalleryItemCategory = styled.div`
+  cursor: pointer;
   background-color: #fff;
   padding: 12px 20px;
   color: #9F8D83;

@@ -10,6 +10,9 @@ export const TitleText = styled.h1`
   font-size: 72px;
   font-weight: 800;
   margin-bottom: 28px;
+  @media (max-width: 1040px) {
+    font-size: 56px;
+  }
 
 `
 export const SubTitleText = styled.p`
