@@ -43,7 +43,7 @@ const Gallery: FC = () => {
 
     const onLoadMoreCards = () => {
         if (page < Number(totalPages)) {
-            dispatch(setPage())
+            dispatch(setPage(page + 1))
         } else {
             alert("There is all cards")
         }

@@ -29,8 +29,8 @@ export const cardSlice = createSlice({
     name: 'card',
     initialState,
     reducers: {
-        setPage: (state) => {
-            state.page += 1
+        setPage: (state, action: PayloadAction<number>) => {
+            state.page = action.payload
         },
         setTotalPages: (state, action: PayloadAction<string>) => {
             state.totalPages = action.payload
@@ -45,6 +45,7 @@ export const cardSlice = createSlice({
             state.loading = false
             state.cards = data
             state.error = ''
+            state.page = 1
             state.totalPages = String(Math.ceil(Number(totalCount) / 10))
         },
         [fetchCards.rejected.type]: (state, action: PayloadAction<string>) => {
